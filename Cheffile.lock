@@ -1,0 +1,18 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.3.4)
+    yum (2.2.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/runit
+  ref: master
+  sha: 870de1218fd005fd0008e74ff8376c7ca480c727
+  specs:
+    runit (1.1.2)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+
+DEPENDENCIES
+  runit (>= 0)
+
