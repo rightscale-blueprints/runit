@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
 # generate metadata.json for all upstream opscode cookbooks (metadata.json should not exist in development repositories)
+rm -v cookbooks/runit/.gitignore                # remove so metadata.json is not ignored
 knife cookbook metadata runit -o cookbooks/
 knife cookbook metadata build-essential -o cookbooks/
 knife cookbook metadata yum -o cookbooks/
