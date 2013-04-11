@@ -2,3 +2,5 @@
 
 # generate metadata.json for all upstream opscode cookbooks (metadata.json should not exist in development repositories)
 knife cookbook metadata runit -o cookbooks/
+knife cookbook metadata build-essential -o cookbooks/
+knife cookbook metadata yum -o cookbooks/
